@@ -1,0 +1,17 @@
+[
+   {
+      "id": "1",
+      "name": "Napoli",
+      "city": "Naples"
+   },
+   {
+      "id": "2",
+      "name": "Roma",
+      "city": "Rome"
+   },
+   {
+      "id": "3",
+      "name": "Milano",
+      "city": "Milan"
+   }
+]

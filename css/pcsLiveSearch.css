@@ -1,0 +1,17 @@
+#pcs-live-search-box {
+    position: absolute;
+    box-shadow: 0 1px 2px;
+    background-color: #fff;
+    list-style-type: none;
+    width: 295px;
+    max-height: 150px;
+	overflow: scroll;
+}
+#pcs-live-search-box li {
+	padding: 5px 10px;
+	border-bottom: 1px solid;
+	cursor: pointer;
+}
+#pcs-live-search-box li:hover {
+	background-color: lightyellow;
+}
