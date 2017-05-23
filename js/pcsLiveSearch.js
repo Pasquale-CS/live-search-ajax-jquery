@@ -9,7 +9,7 @@
 (function ( $ ) {
  
     $.fn.pcsLiveSearch = function( options ) {
-
+    	console.log('plugin');
     	var el = this;
 
         // Default options.
@@ -19,6 +19,7 @@
 
         // Search
 		$(el).keyup(function() {
+			console.log('keyup');
 			var search = $(this);
 			var value = $(this).val();
 			var id_box = 'pcs-live-search-box';
