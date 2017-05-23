@@ -29,6 +29,7 @@
 
 			$.post( settings.file, settings.values)
 			  .done(function( data ) {
+			  	console.log(data);
 			  	var results = $.parseJSON(data);
 
 			  	results.forEach(function(r, i) {
