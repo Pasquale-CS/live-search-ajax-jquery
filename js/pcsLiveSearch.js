@@ -30,9 +30,8 @@
 			$.getJSON( settings.file, settings.values)
 			  	.done(function( data ) {
 				  	console.log(data);
-				  	var results = $.parseJSON(data);
 
-				  	results.forEach(function(r, i) {
+				  	data.forEach(function(r, i) {
 				  		if(r[settings.print] !== null) {
 				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
