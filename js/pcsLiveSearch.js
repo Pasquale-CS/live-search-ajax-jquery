@@ -28,7 +28,7 @@
 
 			$.getJSON( settings.file, { search: value })
 			  	.done(function( data ) {
-				  	console.log(data.items);
+				  	console.log('1 - ' + data.items);
 
 				  	//data.forEach(function(r, i) {
 				  	$.each(data, function(i, r) {
