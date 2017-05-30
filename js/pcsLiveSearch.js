@@ -30,7 +30,8 @@
 			  	.done(function( data ) {
 				  	console.log(data);
 
-				  	data.each(function(r, i) {
+				  	//data.forEach(function(r, i) {
+				  	$.each(data.items, function( i, r) {
 				  		if(r[settings.print] !== null) {
 				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
