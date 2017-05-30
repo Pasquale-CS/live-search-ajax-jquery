@@ -25,6 +25,7 @@
 			$('.search-results').remove();
 
 			var box = '<ul id="' + id_box + '" class="search-results">';
+			console.log(box);
 
 			$.post( settings.file, settings.values)
 			  	.done(function( data ) {
@@ -36,9 +37,10 @@
 				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
 				  	})
+				
 				.fail(function() {
 				    console.log( "error" );
-				});
+					});
 
 				box += '</ul>';
 
