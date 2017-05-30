@@ -10,6 +10,7 @@
  
     $.fn.pcsLiveSearch = function( options ) {
     	var el = this;
+    	console.log(el);
 
         // Default options.
         var settings = $.extend({
@@ -28,9 +29,6 @@
 
 			$.getJSON( settings.file, { search: value })
 			  	.done(function( data ) {
-				  	console.log('1 - ' + data);
-
-				  	//data.forEach(function(r, i) {
 				  	$.each(data, function(i, r) {
 				  		if(r[settings.print] !== null) {
 				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
