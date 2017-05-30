@@ -23,14 +23,14 @@ Include "js/pcsLiveSearch.jquery.js" in your project and use the function "$(sel
   <input type="text" id="pcs-live-search">
   ...
   <script>
-    $(document).ready(function() {
+  	$(document).ready(function() {
 		$('#pcs-live-search').pcsLiveSearch({	// Set element to start search *
-			file: 'files/list.json',			// Set file to search (Also dynamic file such as PHP) *
-			print: 'name',						// Set index to print in search box *
-			timePause: 500,						// Set time pause (ms) before post
-			minChSearch: 2						// Set min character to search
+			file: 'files/list.json',	// Set file to search (Also dynamic file such as PHP) *
+			print: 'name',			// Set index to print in search box *
+			timePause: 500,			// Set time pause (ms) before post
+			minChSearch: 2			// Set min character to search
 		});
-		// Values ​​with * are required
+		// Values with * are required
 	});
   </script>
   ...
@@ -64,12 +64,12 @@ Includere il file "js/pcsLiveSearch.jquery.js" net tuo progetto e usare la funzi
   <input type="text" id="pcs-live-search">
   ...
   <script>
-    $(document).ready(function() {
+  	$(document).ready(function() {
 		$('#pcs-live-search').pcsLiveSearch({	// Selezionare l'elemento da cercare *
-			file: 'files/list.json',			// Settare il percorso del file json (Anche pagine dinamiche, tipo PHP) *
-			print: 'name',						// Settare l'indice da cercare nella post *
-			timePause: 500,						// Settare una pausa (ms) prima della post
-			minChSearch: 2						// Settare il numero minimo di caratteri per iniziare la ricerca
+			file: 'files/list.json',	// Settare il percorso del file json (Anche pagine dinamiche, tipo PHP) *
+			print: 'name',			// Settare l'indice da cercare nella post *
+			timePause: 500,			// Settare una pausa (ms) prima della post
+			minChSearch: 2			// Settare il numero minimo di caratteri per iniziare la ricerca
 		});
 		// I valori con * sono obbligatori
 	});
