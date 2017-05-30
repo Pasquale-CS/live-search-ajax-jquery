@@ -28,17 +28,13 @@
 
 			$.getJSON( settings.file, { search: value })
 			  	.done(function( data ) {
-				  	console.log('1 - ' + data.items);
+				  	console.log('1 - ' + data);
 
 				  	//data.forEach(function(r, i) {
 				  	$.each(data, function(i, r) {
 				  		if(r[settings.print] !== null) {
 				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
-				  	})
-				
-				.fail(function() {
-				    console.log( "error" );
 					});
 
 				box += '</ul>';
