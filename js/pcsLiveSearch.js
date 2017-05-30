@@ -25,13 +25,12 @@
 			$('.search-results').remove();
 
 			var box = '<ul id="' + id_box + '" class="search-results">';
-			console.log(box);
 
 			$.getJSON( settings.file, settings.values)
 			  	.done(function( data ) {
 				  	console.log(data);
 
-				  	data.forEach(function(r, i) {
+				  	data.each(function(r, i) {
 				  		if(r[settings.print] !== null) {
 				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
