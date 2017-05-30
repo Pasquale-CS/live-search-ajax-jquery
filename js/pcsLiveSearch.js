@@ -10,7 +10,7 @@
  
     $.fn.pcsLiveSearch = function( options ) {
     	var el = this;
-    	console.log(el);
+    	var selector = el.selector;
 
         // Default options.
         var settings = $.extend({
@@ -31,7 +31,7 @@
 			  	.done(function( data ) {
 				  	$.each(data, function(i, r) {
 				  		if(r[settings.print] !== null) {
-				  			box += '<li onclick="pcsSelectValue(' + el + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
+				  			box += '<li onclick="pcsSelectValue(' + selector + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
 					});
 
