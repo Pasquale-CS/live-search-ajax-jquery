@@ -30,7 +30,7 @@
 
 			$('.search-results').remove();
 
-			if(value.length > settings.minChSearch) {
+			if(value.length >= settings.minChSearch) {
 				timer = setTimeout(function() {
 					var box = '<ul id="' + id_box + '" class="search-results">';
 
