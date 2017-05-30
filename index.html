@@ -30,9 +30,11 @@
 	<!-- INCLUDE IN YOUR PROJECT -->
 	<script>
 		$(document).ready(function() {
-			$('#pcs-live-search').pcsLiveSearch({ // Set element to start search *
-				file: 'files/list.json', // Set file to search (Also dynamic file such as PHP) *
-				print: 'name' // Set index to print in search box *
+			$('#pcs-live-search').pcsLiveSearch({	// Set element to start search *
+				file: 'files/list.json',			// Set file to search (Also dynamic file such as PHP) *
+				print: 'name',						// Set index to print in search box *
+				timePause: 500,						// Set time pause before post
+				minChSearch: 2						// Set min character to search
 			});
 			// Values ​​with * are required
 		});
