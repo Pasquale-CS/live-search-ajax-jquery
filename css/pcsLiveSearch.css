@@ -3,9 +3,10 @@
     box-shadow: 0 1px 2px;
     background-color: #fff;
     list-style-type: none;
-    width: 100%;
+    width: 89%;
     max-height: 150px;
-	overflow: scroll;
+    overflow: scroll;
+    padding: 0;
 }
 #pcs-live-search-box li {
 	padding: 5px 10px;
