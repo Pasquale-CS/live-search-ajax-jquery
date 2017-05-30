@@ -31,7 +31,7 @@
 			  	.done(function( data ) {
 				  	$.each(data, function(i, r) {
 				  		if(r[settings.print] !== null) {
-				  			box += '<li onclick="pcsSelectValue(' + selector + ', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
+				  			box += '<li onclick="pcsSelectValue(\'' + selector + '\', \'' + r[settings.print] + '\')">' + r[settings.print] + '</li>';
 				  		}
 					});
 
